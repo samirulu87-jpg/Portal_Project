@@ -2,7 +2,8 @@ This includes a page that displays the accurate date the site was altered, a car
 Link to working site: 
 
 
-              ~Script~
+
+~Script~
 let currentDate = new Date().toLocaleDateString(); /*grabes the current date*/
 let date = document.querySelector("#date");   /*sets the varable for the date*/
 
@@ -10,9 +11,11 @@ let currentYear = new Date().getFullYear(); /*grabes the current year*/
 let year = document.querySelector("#year"); /*sets the varable for the year*/
 
 date.textContent = currentDate /*Displays the date*/
-year.textContent = currentYear /*displays the current year*/
+year.textContent = currentYear /*displays the current year*/ 
 
-        ~html~
+
+
+ ~html~
  /*Example of card display*/
  <div class="cards">
             <div class="card">
@@ -27,7 +30,8 @@ year.textContent = currentYear /*displays the current year*/
             </div>
     </div>
 
-          ~Css~
+
+ ~Css~
  /*Example of card styles*/
 .cards {
 display: flex;
