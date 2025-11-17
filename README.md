@@ -14,7 +14,6 @@ Link to working site:
      year.textContent = currentYear /*displays the current year*/ 
      
      
-     
       Html
       /*Example of card display*/
       <div class="cards">
