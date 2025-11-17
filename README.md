@@ -3,7 +3,7 @@ Link to working site:
 
 
 
-~Script~
+Script
 let currentDate = new Date().toLocaleDateString(); /*grabes the current date*/
 let date = document.querySelector("#date");   /*sets the varable for the date*/
 
@@ -15,7 +15,7 @@ year.textContent = currentYear /*displays the current year*/
 
 
 
- ~html~
+ Html
  /*Example of card display*/
  <div class="cards">
             <div class="card">
@@ -31,7 +31,7 @@ year.textContent = currentYear /*displays the current year*/
     </div>
 
 
- ~Css~
+ Css
  /*Example of card styles*/
 .cards {
 display: flex;
