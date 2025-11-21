@@ -4,7 +4,7 @@ Link to working site: https://samirulu87-jpg.github.io/Portal_Project/
 
 
      Script
-    let currentDate = new Date().toLocaleDateString();
+                  let currentDate = new Date().toLocaleDateString();
                let date = document.querySelector("#date");
                
                let currentYear = new Date().getFullYear();
@@ -30,13 +30,21 @@ Link to working site: https://samirulu87-jpg.github.io/Portal_Project/
                    const color5 = colors[Math.floor(Math.random() * colors.length)];
                    const angle = Math.floor(Math.random() * 360); // Random angle for variety
                    const finalcolor = `linear-gradient(${angle}deg, ${color1}, ${color2}, ${color3}, ${color4}, ${color5})`;
-                   document.body.style.background = finalcolor;
                
+                  document.body.style.background = finalcolor;
+                   document.body.style.backgroundRepeat = "no-repeat";
+                   document.body.style.backgroundSize = "100% 100%"; // Stretch exactly
+                   document.body.style.height = "100%"; // Ensure full viewport
+                   document.documentElement.style.height = "100%"; // Ensure html is full height
+                   document.body.style.margin = "0";
+               
+                   
                    const cardFronts = document.querySelectorAll(".card-front");
                    cardFronts.forEach(card => {
                        card.style.background = finalcolor;
                    });
                }
+               
 ------------------------------------------------------------------
       Html
       /*Example of card display*/
